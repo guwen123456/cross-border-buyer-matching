@@ -1,14 +1,14 @@
 ---
 name: cross-border-buyer-matching
-description: 外贸跨境买家一键开发匹配：输入货物名称即可启动，按货物名称搜索正在国外在售该货物的卖家（进口商、批发商、零售与电商卖家，即潜在买家），再按买家优先顺序完成真实性核验、100 分匹配评分、供应商反向匹配、个性化英文开发信生成和分波触达计划，输出可直接执行的买家名单与开发信包。Use when the user gives a product name and wants to find overseas sellers or buyers of that product, score and match buyers to suppliers, draft personalized cold outreach, or package verified buyers plus outreach letters as a service for factories.
-version: 1.1.0
+description: 外贸跨境买家一键开发匹配：输入货物名称即可启动，按货物名称搜索国外买家（进口商、批发商、分销商、零售与电商采购方），再按买家优先顺序完成真实性核验、100 分匹配评分、供应商反向匹配、个性化英文开发信生成和分波触达计划，输出可直接执行的买家名单与开发信包。Use when the user gives a product name and wants to find overseas buyers or importers of that product, score and match buyers to suppliers, draft personalized cold outreach, or package verified buyers plus outreach letters as a service for factories.
+version: 1.1.1
 ---
 
 # 外贸跨境买家一键开发匹配
 
-核心匹配方式一句话：**输入货物名称，搜索国外卖家。** 在国外正在卖这件货物的公司（进口商、批发商、零售商、电商卖家），就是最值得开发的潜在买家。
+核心匹配方式一句话：**输入货物名称，搜索国外买家。** 要找的是在国外采购、进口、经销这件货物的买家公司（进口商、批发商、分销商、零售与电商采购方）。判断信号是它在当地在售同类货物、有进口或批发业务、留了公开商务联系方式。
 
-你的任务是把一个货物名称变成一份能直接执行的开发包：一批核验过并打了分的海外卖家（买家）、与买家需求反向匹配的供应商、每家一封填好真实细节的个性化开发信、按时区分好的触达计划。只用公开信息，未核验的字段一律标「待核验」，不猜、不编。
+你的任务是把一个货物名称变成一份能直接执行的开发包：一批核验过并打了分的海外买家、与买家需求反向匹配的供应商、每家一封填好真实细节的个性化开发信、按时区分好的触达计划。只用公开信息，未核验的字段一律标「待核验」，不猜、不编。
 
 ## 输入（必填只有一项）
 
@@ -22,7 +22,7 @@ version: 1.1.0
 
 ## 工作流程
 
-- 第 1 步，按货物名称搜索国外卖家：先做关键词扩展（货物中文名译成英文名，加同义词、品类词、关键规格词各一组），再用这组词在公开渠道搜索正在国外在售该货物的卖家：海外电商平台的在售商家、进口商与批发商官网的产品页、行业目录与展会名录、搜索引擎加市场国家词的组合查询。每家都留来源链接，进 `templates/buyers.csv`。优先有官网、在售同货物、留了公开商务联系方式的公司。在售同货物是最强的匹配信号，官网产品页能打开核实的才算数，搜不到在售证据的公司不当买家。
+- 第 1 步，按货物名称搜索国外买家：先做关键词扩展（货物中文名译成英文名，加同义词、品类词、关键规格词各一组，再加 importer、wholesaler、distributor、buyer 等采购角色词），再用这组词在公开渠道搜索国外买家：进口商与批发商官网、行业买家目录与展会名录、进口数据公开页、海外电商平台的采购型商家、搜索引擎加市场国家词的组合查询。每家都留来源链接，进 `templates/buyers.csv`。优先有官网、有进口或批发业务、在售同货物、留了公开商务联系方式的买家。在售同货物是它会采购这类货的最强信号，官网产品页能打开核实的才算数，找不到采购或在售证据的公司不当买家。
 
 - 第 2 步，核验与评分：按 `references/scoring.md` 给每家买家打分（满分 100），打分理由一行一句写进 `score_basis`，只填数字不算完成。低于 60 分的只留档，不深挖、不发信。
 

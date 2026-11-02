@@ -27,13 +27,13 @@
 | 技能标识 name | cross-border-buyer-matching |
 | 显示名称 | 外贸跨境买家一键开发匹配 |
 | 英文名称 | Cross-Border Buyer Matching |
-| 版本 | 1.1.0 |
+| 版本 | 1.1.1 |
 | 作者 | guwen123456 |
-| 中文介绍 | 输入货物名称，搜索国外在售该货物的卖家并核验打分，输出可直接开发的买家名单与个性化英文开发信包。 |
-| 英文介绍 | Type a product name to find overseas sellers of that product, verify and score them as buyers, reverse-match suppliers, and draft personalized outreach. |
+| 中文介绍 | 输入货物名称，搜索国外买家并核验打分，输出可直接开发的买家名单与个性化英文开发信包。 |
+| 英文介绍 | Type a product name to find overseas buyers of that product, verify and score them, reverse-match suppliers, and draft personalized outreach. |
 | 分类建议 | 生产力 / 办公（页面有更贴切的贸易或商业类目时选类目） |
 | 是否需要第三方 API 密钥 | 否 |
-| 版本说明 v1.1.0 | 匹配方式明确为：输入货物名称 → 关键词扩展 → 搜索国外在售卖家（在售证据可核实才入选）→ 100 分评分 → 供应商反向匹配 → 不带价开发信。 |
+| 版本说明 v1.1.1 | 匹配对象明确为国外买家：输入货物名称 → 关键词扩展 → 搜索国外买家（采购或在售证据可核实才入选）→ 100 分评分 → 供应商反向匹配 → 不带价开发信。 |
 
 ## 提交前检查（已由 Muse 完成）
 
