@@ -53,3 +53,7 @@ A buyers-first B2B lead development skill for cross-border trade. You start by t
 ## License
 
 MIT
+
+## WorkBuddy
+
+WorkBuddy 专用包（官方 frontmatter）与提交信息见 `WORKBUDDY-submission.md`，zip 在本地 `dist/` 目录构建，结构已解压验证。
