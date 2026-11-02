@@ -1,0 +1,5 @@
+# Real working data never belongs in this repo — methodology and fictional samples only.
+data/
+*.local.csv
+__pycache__/
+.DS_Store

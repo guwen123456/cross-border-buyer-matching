@@ -1,0 +1,4 @@
+buyer_id,company_name,country,website,buyer_type,main_business,sells_bluetooth_earbuds,public_contact,contact_source,discovered_date,match_score,score_basis,personalization_detail,status,next_action,next_followup_date,last_contact_date,replies,quote_sent,notes
+B901,Example Audio Wholesale BV,Netherlands,https://example-audio.invalid,批发商,消费电子批发,yes,info@example-audio.invalid,官网联系页,2026-11-02,82,主营音频30 批发20 官网真实18 联系可达15 市场匹配综合82,上月新增 TWS 产品线并在首页推广,待发信,发送首封开发信,,,,,虚构示例数据
+B902,Demo Gadgets GmbH,Germany,https://demo-gadgets.invalid,电商卖家,手机配件,yes,contact@demo-gadgets.invalid,官网联系页,2026-11-02,71,配件20 电商10 官网16 联系15 市场10,,待核验,补个性化锚点后再发信,,,,,虚构示例数据（故意缺锚点，脚本应拦截）
+B903,Sample Home Store LLC,USA,https://sample-home.invalid,零售,家居用品,no,,官网,2026-11-02,25,主营无关0 规模10 真实性10 联系0 市场5,家居品类与耳机无关,留档,不发信,,,,,虚构示例数据
