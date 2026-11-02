@@ -2,9 +2,9 @@
 
 > Cross-Border Buyer Development & Matching — an Agent Skill
 
-给一个产品品类和目标市场，这个 Skill 让 AI Agent 按一套实战验证过的顺序，把「找买家」做成可直接执行的开发包：
+**输入货物名称即可启动**：在国外正在卖这件货物的公司，就是最值得开发的潜在买家。这个 Skill 让 AI Agent 按一套实战验证过的顺序，把「找买家」做成可直接执行的开发包：
 
-1. **买家发现** — 从公开渠道整理进口商 / 批发商 / 零售 / 电商卖家
+1. **按货物名称搜索国外卖家** — 关键词扩展（英文名 / 同义词 / 品类词 / 规格词）后，在公开渠道搜索正在国外在售该货物的进口商 / 批发商 / 零售 / 电商卖家，每家留来源链接，在售证据可核实才入选
 2. **核验评分** — 100 分制五维打分，理由必须落字，≥60 分才深挖
 3. **个性化锚点** — 每家目标买家必须查到一个具体事实，填不出不发信
 4. **供应商反向匹配** — 买家优先：先拿买家三要素（价格带 / 认证 / 试单量）形成需求单，再按硬项反向筛工厂
@@ -48,7 +48,7 @@ python3 scripts/match_buyers.py examples/sample-buyers.csv examples/sample-suppl
 
 ## English summary
 
-A buyers-first B2B lead development skill for cross-border trade. It discovers overseas buyers from public sources, verifies and scores them on a 100-point rubric (only ≥60 proceed), requires a concrete personalization anchor per buyer, matches suppliers in reverse from real buyer demand (price band, certifications, trial quantity), and drafts no-price first-touch outreach that sells verification, QC, consolidation and packaging instead of competing on transparent platform prices. Includes scoring rubrics, outreach and reply templates, CSV schemas, and a zero-dependency matching checker. All sample data is fictional.
+A buyers-first B2B lead development skill for cross-border trade. You start by typing a product name: the skill expands it into search keywords and finds overseas sellers of that exact product (importers, wholesalers, retailers and e-commerce sellers — the strongest potential buyers), verifies and scores them on a 100-point rubric (only ≥60 proceed), requires a concrete personalization anchor per buyer, matches suppliers in reverse from real buyer demand (price band, certifications, trial quantity), and drafts no-price first-touch outreach that sells verification, QC, consolidation and packaging instead of competing on transparent platform prices. Includes scoring rubrics, outreach and reply templates, CSV schemas, and a zero-dependency matching checker. All sample data is fictional.
 
 ## License
 
