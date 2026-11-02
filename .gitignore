@@ -3,3 +3,4 @@ data/
 *.local.csv
 __pycache__/
 .DS_Store
+dist/
